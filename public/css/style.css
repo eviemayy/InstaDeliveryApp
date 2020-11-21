@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500');
+
+body {
+    background: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+  
+html, body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+/*---------------------------------------
+  TYPOGRAPHY              
+-----------------------------------------*/
+
+h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
+/*---------------------------------------
+  INDEX.HTML             
+-----------------------------------------*/
+
+.home-page{
+  height: 100%;
+  padding: 50px;
+}
+
+.content-container{
+  /* Changed from 100px */
+  padding: 50px;
+}
+
+/*---------------------------------------
+  NAV BAR              
+-----------------------------------------*/
+
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .header-logo{
+    /* font-weight: 700;
+    font-size: larger; */
+    font-weight: bold;
+    font-size: 108%;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    color: white;
+    background-color: #111;
+    padding-bottom: 18px;  /* Might have to remove because spacing looks off */
+    text-decoration: none;
+  }
+
+  /* Style the "active" element to highlight the current page */
+.current {
+  background-color: #2196f3;
+  color: white;
+  padding-bottom: 18px; /* Might have to remove because spacing looks off */
+}
+
+/*---------------------------------------
+  CART            
+-----------------------------------------*/
+
+.box,
+.box_2,
+.box_3 {
+  float: left;
+  width: 25%;  /* Expands the box items on the page*/
+  padding: 5px;
+}
+
+#boxes_1::after,
+#boxes_2::after,
+#boxes_3::after,
+#boxes_4::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Currently there aren't any images */
+/* .containers img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/* Spacing for the content of the shop items */
+/* .containers {
+  margin-left: 20px;
+  margin-right: 20px;
+} */
+
+#boxes_1 {
+  margin-top: 30px;
+}
+
+/* Download Button */
+/* .download {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+} */
+
+.download button {
+  font-weight: bold;
+}
+
+.search input[type=text] {
+  width: 60%;
+  padding: 10px;
+  border: none;
+  margin-top: 20px;
+  margin-right: 16px;
+  font-size: 17px;
+  border: 1px solid #ccc;
+}
+
+.content-section{
+  border: solid;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: #19191f;
+  margin-top: 35px;
+}
+
+
+/*---------------------------------------
+  PAYMENT           
+-----------------------------------------*/
+
+.payment-form {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  /* width: 50%; */
+  text-align: center;
+  background-color: #f9f9fa;
+  padding: 10px 50px 50px 50px;
+
+}
+
+/*---------------------------------------
+  SIGN UP / PAYMENT         
+-----------------------------------------*/
+.signup-form, .payment-form {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background-color: #f9f9fa;
+  padding: 10px 50px 50px 50px;
+  border-radius: 25px;
+  height: 60%;
+  width: 50%;
+}
+
+#fname, #lname, #email, #psswrd, #card-number, #exp-date, #sec-code, #holder-name{
+  width: 76%;
+  padding: 10px;
+  border: none;
+  margin-top: 20px;
+  font-size: 17px;
+  border: 1px solid #ccc;
+ /* border-radius: 25px; 
+  text-align: center;*/
+}
+
+#sign-up-button, #payment-button, .payment-edit, .payment-delete{
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: black;
+  font-size: 75%;
+  font-weight: bold;
+}
+
+#sign-up-button:hover{
+  background: gray;
+  border-color: grey;
+  color: white;
+}
+
+
+/*---------------------------------------
+  ORDERS            
+-----------------------------------------*/
+
+.card{
+  width:70%; 
+  text-align:center;
+  margin-right:auto; 
+  margin-left:auto; 
+  display:block; 
+  margin-bottom: 25px;
+}
+
+
+/*---------------------------------------
+  FOOTER             
+-----------------------------------------*/
+
+.footer{
+  background-color: #19191f;
+  color: white;
+  /* position: absolute;
+  width: 100%;
+  bottom: 0; */
+}

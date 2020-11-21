@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Cart - InstaDelivery</title>
+</head>
+
+<body>
+    <!-- Nav Menu-->
+    <ul class="topnav">
+        <li><a class="active header-logo" href="index.html">InstaDelivery</a></li>
+        <li><a class="current" href="/products">Shop</a></li>
+        <li><a href="/orders">My orders</a></li>
+        <li><a href="payment.html">My payment</a></li>
+        <li><a href="/deliverers">Deliverer assignments</a></li>
+    </ul>
+
+    <div class="content-container">
+
+        <h1>Cart</h1>
+
+        <!-- Search Bar -->
+        <div class="search">
+            <input type="text" placeholder="Search..">
+            <button class="btn btn-success">Go</button>
+        </div>
+
+        <br>
+        <button class="btn btn-primary">Add Product</button>
+        <button class="btn btn-primary">Update Product</button>
+        <button class="btn btn-danger">Delete Product</button>
+
+
+        <!-- New Releases -->
+        <!-- <h1>Results</h1> -->
+        <section id="boxes_1">
+            <div class="containers">
+                {{#each products}}
+                <div class="box">
+                    <h3 class="shop-title" name="leggings">{{name}}</h3>
+                    <span class="price">{{price}}</span>
+                    <p>{{description}}</p>
+                    <button class="btn btn-info shop-button">Add To Cart</button>
+                </div>
+                {{/each}}
+            </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2020 InstaDelivery</p>
+    </footer>
+
+
+    <script src="js/cart.js"></script>
+    <script src="https://kit.fontawesome.com/e0d7e7d4bc.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

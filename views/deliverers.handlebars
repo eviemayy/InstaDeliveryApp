@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>InstaDelivery</title>
+</head>
+
+<body>
+    <ul class="topnav">
+        <li><a class="active header-logo current" href="index.html">InstaDelivery</a></li>
+        <li><a href="/products">Shop</a></li>
+        <li><a href="/orders">My orders</a></li>
+        <li><a href="payment.html">My payment</a></li>
+        <li><a href="/deliverers">Deliverer assignments</a></li>
+    </ul>
+
+    <div class="content-container">
+        <h1>Deliverer Assignments</h1>
+        <div class="search">
+            <input type="text" placeholder="Search..">
+            <button class="btn btn-success">Go</button>
+        </div>
+        <button style="margin: 10px" class="btn btn-primary">Assign an Order</button>
+    </div>
+
+
+    <!-- <div class="assginments">
+        <div class="specific-assign">
+            <p>Order 345</p>
+            <p>1 Apples</p>
+            <p>3 Bananas</p>
+            <p>6 Grapes</p>
+            <p>Assigned To: Chris Jenkins</p>
+            <button>Complete Order</button>
+            <hr>
+        </div>
+    </div> -->
+
+    {{#each deliverers}}
+    <div class="card" style="margin-top: 20px;">
+        <h5 class="card-header">{{firstName}} {{lastName}}</h5>
+        <div class="card-body">
+            <p>Orders they're assigned to go here</p>
+        </div>
+    </div>
+    {{/each}}
+
+    <footer class="footer">
+        <p>Copyright &copy; 2020 InstaDelivery</p>
+    </footer>
+</body>
+
+</html>

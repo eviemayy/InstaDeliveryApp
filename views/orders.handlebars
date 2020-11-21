@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <title>InstaDelivery</title>
+
+    <script src="js/orders.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.runtime.js"></script>
+</head>
+
+<body>
+    <ul class="topnav">
+        <li><a class="active header-logo" href="index.html">InstaDelivery</a></li>
+        <li><a href="/products">Shop</a></li>
+        <li><a class="current" href="/orders">My orders</a></li>
+        <li><a href="payment.html">My payment</a></li>
+        <li><a href="/deliverers">Deliverer assignments</a></li>
+    </ul>
+
+    <div class="content-container">
+        <h1>Orders</h1>
+    </div>
+
+    <div>
+        {{#each orders}}
+        <div class="card">
+            <h5 class="card-header">{{orderID}}</h5>
+            <div class="card-body">
+                <div>
+                    {{dateOrdered}}
+                </div>
+                <button href="#" class="btn btn-primary">Edit Order</button>
+                <button href="#" class="btn btn-danger">Delete Order</button>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2020 InstaDelivery</p>
+    </footer>
+</body>
+
+</html>
